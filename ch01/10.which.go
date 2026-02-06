@@ -23,7 +23,7 @@ func main() {
 		fileInfo, err := os.Stat(fullPath)
 		if err == nil {
 			mode := fileInfo.Mode()
-			// это обысный файл
+			// это обычный файл
 			if mode.IsRegular() {
 				// является ли он исполняемым?
 				if mode&0111 != 0 {
