@@ -17,5 +17,4 @@ func main() {
 	// соотвественно, мы приводим тип
 	k := math.Abs(float64(AnotherGlobal))
 	fmt.Printf("Global=%d, i=%d, j=%d k=%2.f.\n", Global, i, j, k)
-
 }
