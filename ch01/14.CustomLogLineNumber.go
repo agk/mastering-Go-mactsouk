@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	fmt.Println(os.TempDir())
 	LOGFILE := path.Join(os.TempDir(), "mGo.log")
 	f, err := os.OpenFile(LOGFILE, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
@@ -20,10 +21,11 @@ func main() {
 	}
 	defer f.Close()
 
-	LsdtFlags := log.Ldate | log.Lshortfile
-	iLog := log.New(f, "iLog ", log.LstdFlags)
+	LstdFlags := log.Ldate | log.Lshortfile
+	iLog := log.New(f, "iLog ", LstdFlags)
 	iLog.Println("Hello there!")
 	iLog.Println("Mastering Go 3rd edition")
+
 	iLog.SetFlags(log.Lshortfile | log.LstdFlags)
 	iLog.Println("another log entry!")
 
