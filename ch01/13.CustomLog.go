@@ -11,6 +11,8 @@ func main() {
 	LOGFILE := path.Join(os.TempDir(), "mGo.log")
 	f, err := os.OpenFile(LOGFILE, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
+	// fmt.Println(os.TempDir())
+
 	// вызов os.OpenFile() файл журнала для записи,
 	// еслион не существует, или же открывает его для записи,
 	// путем добавления новых данных в конце (os.O_APPEND)

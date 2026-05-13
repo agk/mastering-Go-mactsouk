@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println(os.TempDir())
+	// fmt.Println(os.TempDir())
 	LOGFILE := path.Join(os.TempDir(), "mGo.log")
 	f, err := os.OpenFile(LOGFILE, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
