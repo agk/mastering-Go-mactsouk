@@ -17,6 +17,7 @@ func main() {
 	fmt.Println("cZero: ", cZero)
 
 	x := 12
+
 	k := 5
 	fmt.Println(x)
 	fmt.Printf("Type of x: %T\n", x)

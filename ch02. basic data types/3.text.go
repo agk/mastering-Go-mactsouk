@@ -17,7 +17,7 @@ func main() {
 
 	// вывести существующую строку в виде рун
 	for _, v := range aString {
-		fmt.Printf("%x", v)
+		fmt.Printf("%x ", v)
 	}
 	fmt.Println()
 
